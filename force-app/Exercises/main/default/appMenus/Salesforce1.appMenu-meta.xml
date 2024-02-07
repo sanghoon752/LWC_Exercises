@@ -9,6 +9,10 @@
         <type>StandardAppMenuItem</type>
     </appMenuItems>
     <appMenuItems>
+        <name>AwInstructors</name>
+        <type>CustomTab</type>
+    </appMenuItems>
+    <appMenuItems>
         <name>MyDay</name>
         <type>StandardAppMenuItem</type>
     </appMenuItems>
@@ -23,10 +27,6 @@
     <appMenuItems>
         <name>Search</name>
         <type>StandardAppMenuItem</type>
-    </appMenuItems>
-    <appMenuItems>
-        <name>AwInstructors</name>
-        <type>CustomTab</type>
     </appMenuItems>
     <appMenuItems>
         <name>People</name>
