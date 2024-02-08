@@ -10,7 +10,7 @@ export default class StudentBrowser extends LightningElement {
           return {
             'sobjectType': 'Contact',
             'Name': studentName,
-            'PhotoUrl': '/services/images/photo/003B0FakePictId',
+            'photoUrl': '/services/images/photo/003B0FakePictId',
             'Id': index
           };
         });
