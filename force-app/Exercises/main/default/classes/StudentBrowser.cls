@@ -20,6 +20,7 @@ public with sharing class StudentBrowser {
         query += 'ORDER BY Name';
         
         return Database.query(query);
+
     }
 }
 
