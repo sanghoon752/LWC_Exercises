@@ -49,4 +49,9 @@ export default class StudentBrowserForm extends LightningElement {
             this.error = error;
         }
     }
+    onInstructorChange(event) {
+        this.selectedDeliveryId = '';
+        this.selectedInstructorId = event.target.value;
+    }
+
 }
