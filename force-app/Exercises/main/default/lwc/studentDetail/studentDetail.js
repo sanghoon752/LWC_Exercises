@@ -2,6 +2,8 @@ import { LightningElement, wire } from 'lwc';
 
 // TODO #1: import the getRecord, getFieldValue, and getFieldDisplayValue functions from lightning/uiRecordApi.
 import { getRecord, getFieldValue, getFieldDisplayValue } from 'lightning/uiRecordApi';
+import { subscribe, unsubscribe, MessageContext } from 'lightning/messageService';
+import SELECTED_STUDENT_CHANNEL from '@salesforce/messageChannel/SelectedStudentChannel__c';
 // TODO #2: We've imported the name field and placed it into an array for you.
 //          To prepare for Lab 1, import the Description, Email, and Phone fields and add them to the array.
 import FIELD_Name from '@salesforce/schema/Contact.Name';
@@ -14,7 +16,8 @@ export default class StudentDetail extends LightningElement {
 
 	// TODO #3: locate a valid Contact ID in your scratch org and store it in the studentId property.
 	// Example: studentId = '003S000001SBAXEIA5';
-	studentId = '0035200000tzivrAAA';
+	Subscription;
+	studentId;
 
 	//TODO #4: use wire service to call getRecord, passing in our studentId and array of fields.
 	//		   Store the result in a property named wiredStudent.
@@ -53,6 +56,30 @@ export default class StudentDetail extends LightningElement {
 	
 	_getDisplayValue(data, field) {
 		return getFieldDisplayValue(data, field) ? getFieldDisplayValue(data, field) : getFieldValue(data, field);
+	}
+
+	@wire(MessageContext) messageContext;
+	
+	connectedCallback() {
+		if(this.subscription){
+			return;
+		}
+		this.subscription = subscribe(
+			this.messageContext,
+			SELECTED_STUDENT_CHANNEL,
+			(message) => {
+			this.handleStudentChange(message)
+			}
+		);
+		}
+
+	handleStudentChange(message) {
+		this.studentId = message.studentId;
+	}
+
+	disconnectedCallback() {
+		unsubscribe(this.subscription);
+		this.subscription = null;
 	}
 	
 }
