@@ -1,5 +1,5 @@
 {
-    "serverMaxRevisionCounter": 1369,
+    "serverMaxRevisionCounter": 1391,
     "sourceMembers": {
         "ListView__Account.AllAccounts": {
             "serverRevisionCounter": 111,
@@ -326,14 +326,14 @@
             "isNameObsolete": false
         },
         "Profile__Admin": {
-            "serverRevisionCounter": 1365,
-            "lastRetrievedFromServer": 1365,
+            "serverRevisionCounter": 1380,
+            "lastRetrievedFromServer": 1380,
             "memberType": "Profile",
             "isNameObsolete": false
         },
         "Profile__Training User": {
-            "serverRevisionCounter": 1366,
-            "lastRetrievedFromServer": 1366,
+            "serverRevisionCounter": 1381,
+            "lastRetrievedFromServer": 1381,
             "memberType": "Profile",
             "isNameObsolete": false
         },
@@ -428,8 +428,8 @@
             "isNameObsolete": false
         },
         "CustomObject__Course_Attendee__c": {
-            "serverRevisionCounter": 96,
-            "lastRetrievedFromServer": 96,
+            "serverRevisionCounter": 1391,
+            "lastRetrievedFromServer": 1391,
             "memberType": "CustomObject",
             "isNameObsolete": false
         },
@@ -674,8 +674,8 @@
             "isNameObsolete": false
         },
         "PermissionSet__Certification": {
-            "serverRevisionCounter": 1367,
-            "lastRetrievedFromServer": 1367,
+            "serverRevisionCounter": 1383,
+            "lastRetrievedFromServer": 1383,
             "memberType": "PermissionSet",
             "isNameObsolete": false
         },
@@ -800,8 +800,8 @@
             "isNameObsolete": false
         },
         "Profile__B2B Reordering Portal Buyer Profile": {
-            "serverRevisionCounter": 1364,
-            "lastRetrievedFromServer": 1364,
+            "serverRevisionCounter": 1379,
+            "lastRetrievedFromServer": 1379,
             "memberType": "Profile",
             "isNameObsolete": false
         },
@@ -1087,10 +1087,58 @@
             "memberType": "LightningComponentResource",
             "isNameObsolete": false
         },
+        "ListView__Course_Attendee__c.All": {
+            "serverRevisionCounter": 1382,
+            "lastRetrievedFromServer": 1382,
+            "memberType": "ListView",
+            "isNameObsolete": false
+        },
         "CustomTab__AwInstructors_Cmp_Tab": {
             "serverRevisionCounter": 1363,
             "lastRetrievedFromServer": 1363,
             "memberType": "CustomTab",
+            "isNameObsolete": false
+        },
+        "CustomTab__Course_Attendee__c": {
+            "serverRevisionCounter": 1378,
+            "lastRetrievedFromServer": 1378,
+            "memberType": "CustomTab",
+            "isNameObsolete": false
+        },
+        "LightningComponentBundle__courseAttendee": {
+            "serverRevisionCounter": 1385,
+            "lastRetrievedFromServer": 1385,
+            "memberType": "LightningComponentBundle",
+            "isNameObsolete": false
+        },
+        "LightningComponentResource__courseAttendee/courseAttendee.html": {
+            "serverRevisionCounter": 1386,
+            "lastRetrievedFromServer": 1386,
+            "memberType": "LightningComponentResource",
+            "isNameObsolete": false
+        },
+        "LightningComponentResource__courseAttendee/courseAttendee.js-meta.xml": {
+            "serverRevisionCounter": 1387,
+            "lastRetrievedFromServer": 1387,
+            "memberType": "LightningComponentResource",
+            "isNameObsolete": false
+        },
+        "LightningComponentResource__courseAttendee/courseAttendee.js": {
+            "serverRevisionCounter": 1388,
+            "lastRetrievedFromServer": 1388,
+            "memberType": "LightningComponentResource",
+            "isNameObsolete": false
+        },
+        "AuraDefinitionBundle__Override_View_CourseAttendee": {
+            "serverRevisionCounter": 1389,
+            "lastRetrievedFromServer": 1389,
+            "memberType": "AuraDefinitionBundle",
+            "isNameObsolete": false
+        },
+        "AuraDefinition__Override_View_CourseAttendee/Override_View_CourseAttendee.cmp": {
+            "serverRevisionCounter": 1390,
+            "lastRetrievedFromServer": 1390,
+            "memberType": "AuraDefinition",
             "isNameObsolete": false
         }
     }
