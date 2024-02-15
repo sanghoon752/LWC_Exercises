@@ -8,8 +8,8 @@
     <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
     <label>Sales</label>
     <navType>Standard</navType>
-    <tabs>Deliveries_Map</tabs>
     <tabs>standard-home</tabs>
+    <tabs>Deliveries_Map</tabs>
     <tabs>standard-Opportunity</tabs>
     <tabs>standard-Lead</tabs>
     <tabs>standard-Task</tabs>
