@@ -2,15 +2,15 @@
 
 	<lightning-layout horizontal-align="space" multiple-rows>
 
-		<lightning-layout-item padding="around-small" size="12" small-device-size="12" medium-device-size="3" large-device-size="2">
+		<lightning-layout-item class="slds-order_1" padding="around-small" size="12" small-device-size="12" medium-device-size="3" large-device-size="2">
 			<c-aw-navigation onnavitemselected={handleNavItemSelected}></c-aw-navigation>
 		</lightning-layout-item>
 
 		<template lwc:if={studentBrowserView}>
-			<lightning-layout-item  padding="around-small" size="12" small-device-size="12" medium-device-size="5" large-device-size="7">
+			<lightning-layout-item class="slds-order_3 slds-medium-order_2"  padding="around-small" size="12" small-device-size="12" medium-device-size="5" large-device-size="7">
 				<c-student-browser></c-student-browser>
 			</lightning-layout-item>
-			<lightning-layout-item  padding="around-small" size="12" small-device-size="12" medium-device-size="4" large-device-size="3">
+			<lightning-layout-item class="slds-order_2 slds-medium-order_3"  padding="around-small" size="12" small-device-size="12" medium-device-size="4" large-device-size="3">
 				<c-student-detail></c-student-detail>
 			</lightning-layout-item>
 		</template>

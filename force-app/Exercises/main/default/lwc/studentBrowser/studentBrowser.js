@@ -27,6 +27,23 @@ export default class StudentBrowser extends LightningElement {
     });
   }
 
+  cols = [
+    {
+      fieldName:"Name",
+      label: "Name"
+    },
+    {
+      fieldName:"Title",
+      label: "Title",
+      hiddenOnMobile: true
+    },
+    {
+      fieldName:"Phone",
+      label: "Phone",
+      type: "phone"
+    }
+  ];
+
     /*constructor() {
         super();
         const studentNames = ['Rad', 'Stuart', 'Andres', 'Rahul', 'Amit', 'Simon'];
