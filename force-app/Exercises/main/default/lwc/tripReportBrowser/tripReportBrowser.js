@@ -51,11 +51,11 @@ export default class TripReportBrowser extends LightningElement {
 		const eventDetail = {
 			mode: newMode
 		}
-		if(newMode == 'edit'){
+		if(newMode === 'edit'){
 			eventDetail.Id = this.selectedRecordId;
 		}
 		
-		const evet = new CustomEvent('tripreportmodechange', {
+		const evt = new CustomEvent('tripreportmodechange', {
 			detail: eventDetail
 		});
 		this.dispatchEvent(evt);

@@ -1,7 +1,6 @@
 <template>
 	<lightning-card title={formTitle}>
 		<form class="slds-form_stacked slds-var-p-around_medium" >
-			
 			<lightning-combobox name="instructor" label="Instructor" options={instructors} 
                                 value={instructorId} onchange={onInstructorChange}
                                 placeholder="Select an instructor"
@@ -35,7 +34,7 @@
                                 disabled={saveButtonDisabled}
                 class="slds-var-m-right_x-small">
                 </lightning-button>
-				<lightning-button label="Cancel"></lightning-button>
+				<lightning-button label="Cancel" onclick={onCancel}></lightning-button>
 			</div>
 		</form>
 	</lightning-card>
