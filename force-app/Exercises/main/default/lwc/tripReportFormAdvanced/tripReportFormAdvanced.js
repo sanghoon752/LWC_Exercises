@@ -165,4 +165,14 @@ export default class TripReportFormAdvanced extends LightningElement {
 		
 	}
 
+    validateFields(){
+        const fields = Array.from(this.template.querySelectorAll('.validateMe'));
+        return fields.every((currentField) => currentField.checkValidity());
+    }
+
+    saveButtonDisabled = true;
+    onBlur(){
+        this.saveButtonDisabled = !this.validateFields();
+    }
+
 }
