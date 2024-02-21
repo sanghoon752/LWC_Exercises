@@ -10,4 +10,11 @@ export default class TripReports extends LightningElement {
 		return (this.mode==='add' || this.mode==='edit');
 	}
 
+	selectedTripReportID = 0;
+	
+	handleTripReportModeChange(event){
+		this.mode = event.detail.mode;
+		this.selectedTripReportId = event.detail.Id;
+	}
+
 }
