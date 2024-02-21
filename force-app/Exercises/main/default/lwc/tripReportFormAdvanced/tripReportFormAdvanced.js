@@ -48,7 +48,7 @@ export default class TripReportFormAdvanced extends LightningElement {
         if (data) {
 			this.dateVisited = getFieldValue(data, FIELD_DATE);
 			this.instructorId = getFieldValue(data, FIELD_INSTRUCTOR);
-            this.locationName = getFieldValye(data, FIELD_NAME);
+            this.locationName = getFieldValue(data, FIELD_NAME);
             this.rating = getFieldValue(data, FIELD_RATING);
             this.reviewType = getFieldValue(data, FIELD_REVIEWTYPE);
             this.review = getFieldValue(data, FIELD_REVIEW);
@@ -129,7 +129,7 @@ export default class TripReportFormAdvanced extends LightningElement {
 		//in our request
 
 		if (!this.recordId) {
-            const recordInput = {fields:fieldsToSave, apiName:OBJECT_TRIP_REPORT.objectAPiName};
+            const recordInput = { fields:fieldsToSave, apiName:OBJECT_TRIP_REPORT.objectApiName};
 			
 			//todo #6: When creating a new record, define an object named recordInput with two property:
 			//---fields, which contains the fieldsToSave object
@@ -173,6 +173,7 @@ export default class TripReportFormAdvanced extends LightningElement {
     }
 
     saveButtonDisabled = true;
+
     onBlur(){
         this.saveButtonDisabled = !this.validateFields();
     }
