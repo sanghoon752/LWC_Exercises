@@ -64,4 +64,12 @@ export default class LayoutManager extends LightningElement {
 		const modal = this.template.querySelector('c-modal');
 		modal.hide();
 	}
+
+	loading = true;
+	handleLoading(){
+		this.loading = true;
+	}
+	handleDoneLoading(){
+		this.loading = false;
+	}
 }
